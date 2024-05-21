@@ -15,6 +15,7 @@ variable "instanceType" {
 }
 
 variable "accountIdVoclabs" {}
+}
 
 variable "policyArn" {
   default = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
@@ -23,3 +24,4 @@ variable "policyArn" {
 variable "accessConfig" {
   default = "API_AND_CONFIG_MAP"
 }
+
