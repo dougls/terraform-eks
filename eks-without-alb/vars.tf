@@ -2,37 +2,19 @@ variable "regionDefault" {
   default = "us-east-1"
 }
 
-variable "labRole" {
-  default = "arn:aws:iam::<account-id>:role/LabRole"
-}
-
 variable "projectName" {
   default = "nginx"
 }
 
-variable "subnetA" {
-  default = "<subnet-id>"
-}
-
-variable "subnetB" {
-  default = "<subnet-id>"
-}
-
-variable "subnetC" {
-  default = "<subnet-id>"
-}
-
-variable "vpcId" {
-  default = "<vpc-id>"
+variable "vpcCidr" {
+  default = "172.31.0.0/16"
 }
 
 variable "instanceType" {
   default = "t3a.medium"
 }
 
-variable "principalArn" {
-  default = "arn:aws:iam::<account-id>:role/voclabs"
-}
+variable "accountIdVoclabs" {}
 
 variable "policyArn" {
   default = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
